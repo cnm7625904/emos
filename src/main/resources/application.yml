@@ -45,3 +45,14 @@ spring:
       authentication-database: admin
       username: admin
       password: abc123456
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+emos:
+ jwt:
+#加密字符串
+   secret: abc123456
+#过期时间
+   expire: 5
+#缓存过期时间
+   cache-expire: 10
